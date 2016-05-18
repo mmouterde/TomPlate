@@ -41,7 +41,9 @@ var tomplate = (function () {
 
     function tomplate(string, eventHandler) {
         var element = parse(string);
-        readEventHandlers(element, eventHandler);
+        if (eventHandler) {
+            readEventHandlers(element, eventHandler);
+        }
         return element;
     }
 
