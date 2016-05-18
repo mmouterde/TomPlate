@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Hello() {
+            console.log("Here is the Global Hello")
+        }
+        (function () {
+
+            function Hello() {
+                console.log("This is a private and contextual Hello function");
+            }
+
+            setTimeout(function () {
+                toDom("<a href='#' onclick='{Hello()}' ondblclick='Hello()'>link</a>", {
+                    Hello: Hello
+                });
+            });
+        })();
+
+
+    </script>
+</head>
+<body>
+
+<div id="content"/>
+
+</body>
+</html>
