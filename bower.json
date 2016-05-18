@@ -2,7 +2,7 @@
   "name": "TomPlate",
   "description": "HTML template with function binding",
   "main": [
-    "./tomplate.js"
+    "./src/tomplate.js"
   ],
   "authors": [
     "martin.mouterde@gmail.com"

@@ -1,4 +1,4 @@
-var toDom = (function () {
+var tomplate = (function () {
     var cache = {};
 
     function parse(string) {
@@ -39,11 +39,11 @@ var toDom = (function () {
         return template.substring(1, template.indexOf("("));
     }
 
-    function toDom(string, eventHandler) {
+    function tomplate(string, eventHandler) {
         var element = parse(string);
         readEventHandlers(element, eventHandler);
         return element;
     }
 
-    return toDom;
+    return tomplate;
 })();
