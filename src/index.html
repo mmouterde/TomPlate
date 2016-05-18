@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TomPlate</title>
+    <script src="./tomplate.js"></script>
     <script>
+        //Global section
         function Hello() {
             console.log("Here is the Global Hello")
         }
+        //scoped section
         (function () {
 
             function Hello() {
                 console.log("This is a private and contextual Hello function");
             }
 
-            setTimeout(function () {
-                toDom("<a href='#' onclick='{Hello()}' ondblclick='Hello()'>link</a>", {
-                    Hello: Hello
-                });
-            });
+            window.onload = function () {
+                var element = toDom(
+                        //give a HTML string with eventHandler as template with {} or not
+                        "<a href='#' onclick='{HelloFn()}' ondblclick='Hello()'>link</a>",
+                        //give an object with the mapped function with the tempalte
+                        {HelloFn: Hello}
+                );
+                document.getElementById("content").appendChild(element);
+            };
         })();
-
-
     </script>
 </head>
 <body>
-
 <div id="content"/>
-
 </body>
 </html>

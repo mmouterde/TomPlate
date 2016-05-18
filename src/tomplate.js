@@ -42,7 +42,7 @@ var toDom = (function () {
     function toDom(string, eventHandler) {
         var element = parse(string);
         readEventHandlers(element, eventHandler);
-        document.getElementById("content").appendChild(element);
+        return element;
     }
 
     return toDom;
