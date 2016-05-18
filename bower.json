@@ -1,5 +1,5 @@
 {
-  "name": "TomPlate",
+  "name": "tomplate",
   "description": "HTML template with function binding",
   "main": [
     "./src/tomplate.js"
