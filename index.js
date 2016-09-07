@@ -48,4 +48,7 @@
     }
 
     window.tomplate = tomplate;
+    if (module) {
+        module.exports = tomplate;
+    }
 })();
