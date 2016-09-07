@@ -1,4 +1,4 @@
-var tomplate = (function () {
+(function () {
     var cache = {};
 
     function parse(string) {
@@ -47,5 +47,5 @@ var tomplate = (function () {
         return element;
     }
 
-    return tomplate;
+    window.tomplate = tomplate;
 })();

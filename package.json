@@ -1,0 +1,25 @@
+{
+  "name": "tomplate",
+  "version": "0.0.2",
+  "description": "String to DOM with function bindings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmouterde/TomPlate.git"
+  },
+  "keywords": [
+    "HTML",
+    "template",
+    "binding",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmouterde/TomPlate/issues"
+  },
+  "homepage": "https://github.com/mmouterde/TomPlate#readme"
+}
