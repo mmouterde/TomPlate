@@ -1,6 +1,6 @@
 {
   "name": "tomplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "String to DOM with function bindings",
   "main": "index.js",
   "scripts": {
